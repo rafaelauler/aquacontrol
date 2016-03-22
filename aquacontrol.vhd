@@ -113,9 +113,9 @@ begin  -- architecture rtl
   begin
     if (low_light_mode = '1') then
       if (total_time >= 0 and total_time <= 21600) then -- between 6AM and 12PM
-        max_count_in <= total_time / 16;
+        max_count_in <= total_time / 8;
       elsif (total_time > 21600 and total_time <= 43200) then -- 12PM and 6PM
-        max_count_in <= (43200 - total_time) / 16;
+        max_count_in <= (43200 - total_time) / 8;
       else
         max_count_in <= 0;
       end if;
