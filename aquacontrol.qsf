@@ -1,0 +1,136 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 03:11:25  March 22, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		aquacontrol_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY aquacontrol
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "03:11:25  MARCH 22, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VHDL_FILE relogio.vhd
+set_global_assignment -name VHDL_FILE digit_display.vhd
+set_global_assignment -name VHDL_FILE clk_div_custom.vhd
+set_global_assignment -name VHDL_FILE clk_div.vhd
+set_global_assignment -name VHDL_FILE aquacontrol.vhd
+set_global_assignment -name SDC_FILE SDC1.sdc
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_E2 -to SEG0[6]
+set_location_assignment PIN_F1 -to SEG0[5]
+set_location_assignment PIN_F2 -to SEG0[4]
+set_location_assignment PIN_H1 -to SEG0[3]
+set_location_assignment PIN_H2 -to SEG0[2]
+set_location_assignment PIN_J1 -to SEG0[1]
+set_location_assignment PIN_J2 -to SEG0[0]
+set_location_assignment PIN_D1 -to SEG1[6]
+set_location_assignment PIN_D2 -to SEG1[5]
+set_location_assignment PIN_G3 -to SEG1[4]
+set_location_assignment PIN_H4 -to SEG1[3]
+set_location_assignment PIN_H5 -to SEG1[2]
+set_location_assignment PIN_H6 -to SEG1[1]
+set_location_assignment PIN_E1 -to SEG1[0]
+set_location_assignment PIN_D3 -to SEG2[6]
+set_location_assignment PIN_E4 -to SEG2[5]
+set_location_assignment PIN_E3 -to SEG2[4]
+set_location_assignment PIN_C1 -to SEG2[3]
+set_location_assignment PIN_C2 -to SEG2[2]
+set_location_assignment PIN_G6 -to SEG2[1]
+set_location_assignment PIN_G5 -to SEG2[0]
+set_location_assignment PIN_D4 -to SEG3[6]
+set_location_assignment PIN_F3 -to SEG3[5]
+set_location_assignment PIN_L8 -to SEG3[4]
+set_location_assignment PIN_J4 -to SEG3[3]
+set_location_assignment PIN_D6 -to SEG3[2]
+set_location_assignment PIN_D5 -to SEG3[1]
+set_location_assignment PIN_F4 -to SEG3[0]
+set_location_assignment PIN_A12 -to clk24M
+set_location_assignment PIN_T21 -to reset
+set_location_assignment PIN_R17 -to LEDR[9]
+set_location_assignment PIN_R18 -to LEDR[8]
+set_location_assignment PIN_U18 -to LEDR[7]
+set_location_assignment PIN_Y18 -to LEDR[6]
+set_location_assignment PIN_V19 -to LEDR[5]
+set_location_assignment PIN_T18 -to LEDR[4]
+set_location_assignment PIN_Y19 -to LEDR[3]
+set_location_assignment PIN_U19 -to LEDR[2]
+set_location_assignment PIN_R19 -to LEDR[1]
+set_location_assignment PIN_R20 -to LEDR[0]
+set_location_assignment PIN_Y21 -to LEDG[7]
+set_location_assignment PIN_Y22 -to LEDG[6]
+set_location_assignment PIN_W21 -to LEDG[5]
+set_location_assignment PIN_W22 -to LEDG[4]
+set_location_assignment PIN_V21 -to LEDG[3]
+set_location_assignment PIN_V22 -to LEDG[2]
+set_location_assignment PIN_U21 -to LEDG[1]
+set_location_assignment PIN_U22 -to LEDG[0]
+set_location_assignment PIN_W20 -to ~LVDS91p/nCEO~
+set_location_assignment PIN_C4 -to ~ASDO~
+set_location_assignment PIN_C3 -to ~nCSO~
+set_location_assignment PIN_R22 -to adjust_min
+set_location_assignment PIN_R21 -to adjust_hor
+set_location_assignment PIN_C22 -to pwm_led
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_location_assignment PIN_D21 -to adc_clk_out
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS4
+set_location_assignment PIN_B15 -to adc_result[0]
+set_location_assignment PIN_B17 -to adc_result[1]
+set_location_assignment PIN_A16 -to adc_result[2]
+set_location_assignment PIN_A15 -to adc_result[3]
+set_location_assignment PIN_A13 -to adc_result[4]
+set_location_assignment PIN_A18 -to adc_result[5]
+set_location_assignment PIN_B18 -to adc_result[6]
+set_location_assignment PIN_A19 -to adc_result[7]
+set_location_assignment PIN_B20 -to adc_n_wr
+set_location_assignment PIN_B19 -to adc_n_cs
+set_location_assignment PIN_A20 -to adc_n_rd
+set_location_assignment PIN_C21 -to adc_n_intr
+set_location_assignment PIN_L22 -to force_mode_0
+set_location_assignment PIN_L21 -to force_mode_1
+set_location_assignment PIN_D22 -to fan_out
+set_location_assignment PIN_M22 -to cold_mode
+set_location_assignment PIN_V12 -to force_lights_on
+set_location_assignment PIN_W12 -to low_light_mode
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
